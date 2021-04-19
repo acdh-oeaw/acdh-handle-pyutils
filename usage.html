@@ -164,8 +164,20 @@
             
   <section id="usage">
 <h1>Usage<a class="headerlink" href="#usage" title="Permalink to this headline">¶</a></h1>
-<p>To use acdh-handle-pyutils in a project:</p>
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">acdh</span><span class="o">-</span><span class="n">handle</span><span class="o">-</span><span class="n">pyutils</span>
+<p>To create handles:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">os</span>
+<span class="kn">from</span> <span class="nn">acdh_handle_pyutils.client</span> <span class="kn">import</span> <span class="n">HandleClient</span>
+
+<span class="n">user</span> <span class="o">=</span> <span class="s1">&#39;user12.12345-06&#39;</span>
+<span class="n">pw</span> <span class="o">=</span> <span class="n">os</span><span class="o">.</span><span class="n">environ</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="s1">&#39;HANDLE_PASSWORD&#39;</span><span class="p">)</span>  <span class="c1"># e.g. if you don&#39;t want to expose credentials in code</span>
+<span class="n">parsed_data</span> <span class="o">=</span> <span class="s1">&#39;https://id.hansi4ever.com/123&#39;</span>  <span class="c1"># URL to register handle</span>
+
+<span class="n">hdl</span> <span class="o">=</span> <span class="n">HandleClient</span><span class="p">(</span><span class="n">user</span><span class="p">,</span> <span class="n">pw</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">hdl</span><span class="o">.</span><span class="n">register_handle</span><span class="p">(</span><span class="n">parsed_data</span><span class="p">))</span>
+<span class="c1">#  &#39;https://hdl.handle.net/21.11115/0000-000D-FFA0-F&#39;</span>
+
+<span class="nb">print</span><span class="p">(</span><span class="n">hdl</span><span class="o">.</span><span class="n">register_handle</span><span class="p">(</span><span class="n">parsed_data</span><span class="p">,</span> <span class="n">full_url</span><span class="o">=</span><span class="kc">False</span><span class="p">))</span>  <span class="c1"># be aware, each time you call this method, a new handle is registered</span>
+<span class="c1">#  &#39;21.11115/0000-010D-FFA0-F&#39;</span>
 </pre></div>
 </div>
 </section>

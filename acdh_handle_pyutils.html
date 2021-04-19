@@ -96,8 +96,7 @@
 <li class="toctree-l1 current"><a class="reference internal" href="modules.html">acdh_handle_pyutils</a><ul class="current">
 <li class="toctree-l2 current"><a class="current reference internal" href="#">acdh_handle_pyutils package</a><ul>
 <li class="toctree-l3"><a class="reference internal" href="#submodules">Submodules</a></li>
-<li class="toctree-l3"><a class="reference internal" href="#module-acdh_handle_pyutils.acdh_handle_pyutils">acdh_handle_pyutils.acdh_handle_pyutils module</a></li>
-<li class="toctree-l3"><a class="reference internal" href="#module-acdh_handle_pyutils.cli">acdh_handle_pyutils.cli module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#module-acdh_handle_pyutils.client">acdh_handle_pyutils.client module</a></li>
 <li class="toctree-l3"><a class="reference internal" href="#module-acdh_handle_pyutils">Module contents</a></li>
 </ul>
 </li>
@@ -178,19 +177,30 @@
 <section id="submodules">
 <h2>Submodules<a class="headerlink" href="#submodules" title="Permalink to this headline">¶</a></h2>
 </section>
-<section id="module-acdh_handle_pyutils.acdh_handle_pyutils">
-<span id="acdh-handle-pyutils-acdh-handle-pyutils-module"></span><h2>acdh_handle_pyutils.acdh_handle_pyutils module<a class="headerlink" href="#module-acdh_handle_pyutils.acdh_handle_pyutils" title="Permalink to this headline">¶</a></h2>
+<section id="module-acdh_handle_pyutils.client">
+<span id="acdh-handle-pyutils-client-module"></span><h2>acdh_handle_pyutils.client module<a class="headerlink" href="#module-acdh_handle_pyutils.client" title="Permalink to this headline">¶</a></h2>
 <p>Main module.</p>
-</section>
-<section id="module-acdh_handle_pyutils.cli">
-<span id="acdh-handle-pyutils-cli-module"></span><h2>acdh_handle_pyutils.cli module<a class="headerlink" href="#module-acdh_handle_pyutils.cli" title="Permalink to this headline">¶</a></h2>
-<p>Console script for acdh-handle-pyutils.</p>
-<dl class="function">
-<dt id="acdh_handle_pyutils.cli.read_included_file">
-<code class="sig-prename descclassname">acdh_handle_pyutils.cli.</code><code class="sig-name descname">read_included_file</code><span class="sig-paren">(</span><em class="sig-param">filename</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/acdh_handle_pyutils/cli.html#read_included_file"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#acdh_handle_pyutils.cli.read_included_file" title="Permalink to this definition">¶</a></dt>
-<dd><p>DELETE ME</p>
-<p>This method solely demonstrates how to use and read files,        which are automatically included in the distributed python package.
-&#64;param filename: Name of the file to read, which has to be in a folder,        that is included in the python package as specified in setup.py</p>
+<dl class="class">
+<dt id="acdh_handle_pyutils.client.HandleClient">
+<em class="property">class </em><code class="sig-prename descclassname">acdh_handle_pyutils.client.</code><code class="sig-name descname">HandleClient</code><span class="sig-paren">(</span><em class="sig-param">hdl_user</em>, <em class="sig-param">hdl_pw</em>, <em class="sig-param">hdl_provider='http://pid.gwdg.de/handles/'</em>, <em class="sig-param">hdl_prefix='21.11115'</em>, <em class="sig-param">hdl_resolver='https://hdl.handle.net/'</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/acdh_handle_pyutils/client.html#HandleClient"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#acdh_handle_pyutils.client.HandleClient" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></p>
+<dl class="method">
+<dt id="acdh_handle_pyutils.client.HandleClient.register_handle">
+<code class="sig-name descname">register_handle</code><span class="sig-paren">(</span><em class="sig-param">parsed_data</em>, <em class="sig-param">full_url=True</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/acdh_handle_pyutils/client.html#HandleClient.register_handle"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#acdh_handle_pyutils.client.HandleClient.register_handle" title="Permalink to this definition">¶</a></dt>
+<dd><p>registers an handle-id for the passed in URL aka ‘parsed_data’</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><p><strong>parsed_data</strong> (<em>str</em>) – An URL to register a HANDLE-ID for</p>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p>The created HANDLE-ID</p>
+</dd>
+<dt class="field-odd">Return type</dt>
+<dd class="field-odd"><p>str</p>
+</dd>
+</dl>
+</dd></dl>
+
 </dd></dl>
 
 </section>

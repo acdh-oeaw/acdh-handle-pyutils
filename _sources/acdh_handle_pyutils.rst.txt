@@ -4,18 +4,10 @@ acdh\_handle\_pyutils package
 Submodules
 ----------
 
-acdh\_handle\_pyutils.acdh\_handle\_pyutils module
---------------------------------------------------
+acdh\_handle\_pyutils.client module
+-----------------------------------
 
-.. automodule:: acdh_handle_pyutils.acdh_handle_pyutils
-   :members:
-   :undoc-members:
-   :show-inheritance:
-
-acdh\_handle\_pyutils.cli module
---------------------------------
-
-.. automodule:: acdh_handle_pyutils.cli
+.. automodule:: acdh_handle_pyutils.client
    :members:
    :undoc-members:
    :show-inheritance:
