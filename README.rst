@@ -19,6 +19,10 @@ acdh-handle-pyutils
         :alt: Documentation Status
 
 
+ .. image:: https://codecov.io/gh/acdh-oeaw/acdh-handle-pyutils/branch/master/graph/badge.svg?token=96XqlDbpDw
+        :target: https://codecov.io/gh/acdh-oeaw/acdh-handle-pyutils
+
+
 Utility functions to interact with handle.net API
 
 
