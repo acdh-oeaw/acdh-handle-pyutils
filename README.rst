@@ -18,10 +18,9 @@ acdh-handle-pyutils
         :target: https://acdh-handle-pyutils.readthedocs.io/en/latest/?badge=latest
         :alt: Documentation Status
 
-
- .. image:: https://codecov.io/gh/acdh-oeaw/acdh-handle-pyutils/branch/master/graph/badge.svg?token=96XqlDbpDw
+.. image:: https://codecov.io/gh/acdh-oeaw/acdh-handle-pyutils/branch/master/graph/badge.svg?token=96XqlDbpDw
         :target: https://codecov.io/gh/acdh-oeaw/acdh-handle-pyutils
-
+        :alt: Coverage Status
 
 Utility functions to interact with handle.net API
 
