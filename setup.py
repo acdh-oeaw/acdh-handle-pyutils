@@ -2,14 +2,13 @@
 
 """The setup script."""
 
-from setuptools import setup, find_packages
+from setuptools import setup
 
 with open('README.md') as readme_file:
     readme = readme_file.read()
 
 
 requirements = [
-    'pandas>=1.4.0,<2',
     'requests>=2.20.0,<3'
 ]
 
@@ -39,17 +38,11 @@ setup(
     },
     install_requires=requirements,
     license="MIT",
-    long_description=readme + '\n\n' + history,
+    long_description=readme,
+    long_description_content_type='text/markdown',
     include_package_data=True,
     keywords='acdh-handle-pyutils',
     name='acdh-handle-pyutils',
-    packages=find_packages(include=['acdh_handle_pyutils', 'acdh_handle_pyutils.*']),
-    package_data={
-        module.__name__: walker(
-            os.path.dirname(module.__file__),
-            'files'
-        ),
-    },
     setup_requires=setup_requirements,
     test_suite='tests',
     tests_require=test_requirements,

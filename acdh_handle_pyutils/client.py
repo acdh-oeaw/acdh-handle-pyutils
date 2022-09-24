@@ -52,9 +52,9 @@ class HandleClient():
             'Content-Type': 'application/json'
         }
         self.auth = (self.user, self.pw)
-        
+
     def register_handle(self, parsed_data, full_url=True):
-        """ registers an handle-id for the passed in URL aka 'parsed_data' 
+        """ registers an handle-id for the passed in URL aka 'parsed_data'
 
         :param parsed_data: An URL to register a HANDLE-ID for
         :type parsed_data: str
