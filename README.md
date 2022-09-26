@@ -18,7 +18,7 @@ see `./tests/test_client.py` and also checkout the provided defaults for `acdh_h
 
 ### register handle for url
 
-```pyhton
+```Python
 import os
 from acdh_handle_pyutils.client import HandleClient
 
@@ -38,7 +38,7 @@ Be aware that it might take a while until the registerd handle resolves
 ### update handle
 
 
-```pyhton
+```Python
 import os
 from acdh_handle_pyutils.client import HandleClient
 
@@ -52,7 +52,7 @@ URL_TO_UPDATE = "https://sumsi.com/is-the-best"
 cl = HandleClient(HANDLE_USERNAME, HANDLE_PASSWORD)
 updated = cl.update_handle(HANDLE_TO_UPDATE, URL_TO_UPDATE)print(result)
 
-updated.status_code # check for `204 No Content` HTTP response code
+print(updated.status_code) # should return for `204 No Content` HTTP response code for a successful update
 # 204
 ```
 
